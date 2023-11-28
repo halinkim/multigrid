@@ -149,12 +149,12 @@ int main() {
     std::ofstream fout;
     fout.open("sol.txt");
     if (!fout) return 0;
-    for (int i = 0; i < sol.size(); ++i) {
-        fout << x[i] << " ";
+    for (double i : x) {
+        fout << i << " ";
     }
     fout << "\n";
-    for (int i = 0; i < sol.size(); ++i) {
-        fout << sol[i] << " ";
+    for (double i : sol) {
+        fout << i << " ";
     }
 
     fout.close();
