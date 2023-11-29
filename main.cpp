@@ -115,9 +115,7 @@ std::vector<double> Multigrid::solve() {
     for (int i = 0; i < 10; ++i) {
         this ->multigrid(this -> depth - 1);
     }
-//    for (int i = 0; i < this -> u.size(); ++i) {
-//        std::cout <<
-//    }
+
     return this -> u[this -> u.size() - 1];
 }
 

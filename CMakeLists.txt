@@ -3,4 +3,6 @@ project(multigrid)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(multigrid main.cpp)
+add_executable(multigrid main.cpp
+        multigrid3d.h
+        multigrid3d.cpp)
