@@ -57,6 +57,14 @@ build CMakeFiles/multigrid.dir/main.cpp.o: CXX_COMPILER__multigrid_unscanned_Deb
   TARGET_COMPILE_PDB = CMakeFiles/multigrid.dir/
   TARGET_PDB = multigrid.pdb
 
+build CMakeFiles/multigrid.dir/multigrid3d.cpp.o: CXX_COMPILER__multigrid_unscanned_Debug /home/axis/CLionProjects/multigrid/multigrid3d.cpp || cmake_object_order_depends_target_multigrid
+  DEP_FILE = CMakeFiles/multigrid.dir/multigrid3d.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/multigrid.dir
+  OBJECT_FILE_DIR = CMakeFiles/multigrid.dir
+  TARGET_COMPILE_PDB = CMakeFiles/multigrid.dir/
+  TARGET_PDB = multigrid.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target multigrid
@@ -65,7 +73,7 @@ build CMakeFiles/multigrid.dir/main.cpp.o: CXX_COMPILER__multigrid_unscanned_Deb
 #############################################
 # Link the executable multigrid
 
-build multigrid: CXX_EXECUTABLE_LINKER__multigrid_Debug CMakeFiles/multigrid.dir/main.cpp.o
+build multigrid: CXX_EXECUTABLE_LINKER__multigrid_Debug CMakeFiles/multigrid.dir/main.cpp.o CMakeFiles/multigrid.dir/multigrid3d.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/multigrid.dir
   POST_BUILD = :
